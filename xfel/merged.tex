@@ -1,0 +1,70 @@
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=2cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo{./profile.png}
+\name{Fernando E.}{Jascovich}
+\position{Software Developer}
+\address{393, Maipú, Villa Giardino, Córdoba, 5176, Argentina}
+\mobile{+54 9 3548 63 98 33}
+\email{fernando.ej@gmail.com}
+%\homepage{https://github.com/fernando-jascovich}
+\github{fernando-jascovich}
+\linkedin{fernandojascovich}
+% \gitlab{gitlab-id}
+\stackoverflow{3130610}{fernando-jascovich}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+\quote{``https://www.xkcd.com/1168/"}
+\recipientname{Google}
+\recipient
+  {Company Recruitment Team}
+  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Software Engineer}
+% How the letter is opened
+\letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[]{}
+
+
+\usepackage{subfiles}
+\begin{document}
+\makecvheader[R]
+\makecvfooter
+  {\today}
+  {Fernando Ezequiel Jascovich}
+  {\thepage}
+\subfile{coverletter}
+\pagebreak
+\subfile{resume}
+\end{document}
